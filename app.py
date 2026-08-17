@@ -147,7 +147,7 @@ if uploaded_file is not None:
     with col1:
         # Display the uploaded image
         image = Image.open(uploaded_file)
-        st.image(image, caption='Uploaded Fish Image', use_column_width=True)
+        st.image(image, caption='Uploaded Fish Image', use_container_width=True)
     
     with col2:
         st.markdown("### Model Prediction")
