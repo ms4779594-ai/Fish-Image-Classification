@@ -132,13 +132,21 @@ if model is None:
 # File Uploader
 uploaded_file = st.file_uploader("Drop your image here...", type=["jpg", "png", "jpeg"])
 
-# Ensure these match the exact class indices from your Colab training generator
-# This is a placeholder list; update it according to your actual dataset classes
+# The exact alphabetical order matches the user's dataset directories:
+# 'animal fish', 'animal fish bass', 'fish sea_food black_sea_sprat', etc.
 class_names = [
-    "Bangus", "Big Head Carp", "Black Sea Sprat", "Catfish", 
-    "Gilt Head Bream", "Hourse Mackerel", "Red Mullet", "Red Sea Bream",
-    "Salmon", "Trout"
-] 
+    "Animal Fish", 
+    "Animal Fish Bass", 
+    "Black Sea Sprat", 
+    "Gilt Head Bream", 
+    "Hourse Mackerel", 
+    "Red Mullet", 
+    "Red Sea Bream",
+    "Sea Bass",
+    "Shrimp",
+    "Striped Red Mullet",
+    "Trout"
+]
 
 if uploaded_file is not None:
     # Create two columns for layout
