@@ -34,10 +34,10 @@ Dataset is available in the form of a Zip file containing images categorized int
 *   **GitHub Repository**: Well-documented codebase.
 
 ## Workflow and Execution
-1.  Clone this repository.
-2.  Extract the dataset and place it in the designated folder.
-3.  Train the model in Google Colab (using the provided notebooks) and save the `.h5` model file.
-4.  Download the trained `.h5` model to the local repository.
+1.  Clone this repository to your local machine for Streamlit deployment.
+2.  Mount Google Drive in your Google Colab notebook to directly access the `Dataset.zip` without downloading it locally.
+3.  Train the model in Google Colab (extract the dataset directly into the Colab environment using `!unzip`) and save the `best_model.h5` file.
+4.  Download the trained `best_model.h5` model to the local repository.
 5.  Set up the local environment by installing the dependencies from `requirements.txt`.
 6.  Run the Streamlit application using `streamlit run app.py`.
 
